@@ -1,0 +1,19 @@
+/* Selector de Tipo */
+
+body {
+	background-color: red;
+	color: white;
+}
+
+/* Selector ID */
+
+#logo {
+	background-color: blue;
+}
+
+/* Selector Clases */
+
+.link {
+	background-color: purple;
+}
+

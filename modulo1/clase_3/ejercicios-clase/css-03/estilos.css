@@ -1,0 +1,16 @@
+body {
+	background-color: red;
+}
+
+/* Usando opacity 
+
+#contenido {
+	background-color: yellow;
+	opacity: 0.5;
+}*/
+
+/* Usando rgba */
+
+#contenido {
+	background-color: rgba(255, 238, 2, 0.2);
+}
