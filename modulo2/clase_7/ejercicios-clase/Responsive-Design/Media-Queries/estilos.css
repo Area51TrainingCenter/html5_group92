@@ -5,8 +5,10 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  /*background: url('docs/design.png');
+  opacity: 0.5;*/
 }
 
 a {
@@ -18,7 +20,7 @@ li {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1226px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
@@ -26,22 +28,25 @@ li {
 
 header {
   padding: 19px 0 4px 0;
-  box-shadow: 1px 1px 4px 0px #ccc;
+  background:black;
 }
 
-header h1 {
-  width: 12.5%;
+header, .banner {
+  color: white;
+}
+
+header h1 { 
   float: left;
-  margin-left: 2%;
+  margin-left: 38px; 
 }
 
-header .menu {
+header nav {
   float: right;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 header img {
-  max-width: 100%;
+  width: 98px;
 }
 
 header li {
@@ -53,75 +58,330 @@ header li:last-child a{
   margin-right: 0;
 }
 
-header .menu a {
-  color: #333;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.8em; 
-  margin-right: 2.875em;
-  transition: color 500ms;
+header a {
+  color: #fff;
+  margin-right: 38px;
+  font-size: 14px;
+  transition: color 800ms;
+}
+
+header a.fa-bars {
+  font-size: 23px;
+  margin-right: 0;
+}
+
+header a:hover {
+  color: #74A534;
+}
+
+header a:active, header .active {
+  border-bottom: 5px solid #74A534;
+}
+
+/* Banner */
+
+.banner {
+  background: url('images/cover1.jpg') no-repeat;
+  background-size: cover;
+  height: 780px;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+}
+
+.banner-desc {
+  padding-top: 237px;
+}
+
+.banner-desc h2 {
+  text-align: center;
+}
+
+.banner-desc span:first-child {
+  display: block;
+  font-weight: 300;
+  font-size: 41px;
+  margin-bottom: 10px;
+}
+
+.banner-desc span:last-child {
+  display: block;
+  font-weight: 300;
+  font-size: 41px;
+}
+
+.banner-desc a {
+  color: white;
+  display: block;
+  padding: 15px 1.5em;
+  text-align: center;
+  width:234px;
+  border-radius: 5px;
+  float: left;
+  margin-right: 16px;
+}
+
+.btn-wrap {
+  overflow: hidden;
+  margin: 40px auto;
+  width: 500px;
+}
+
+a.more {
+  border:2px solid #fff;
+}
+
+a.started {
+  background:#74A534;
+  border: 2px solid #74A534;
+}
+
+.banner-btn {
+  color: white;
   display: block;
 }
 
-header a:active, header a:hover, header .active {
-  color: #03a9f4;
+/* Team */
+
+.team-wrap {
+  padding-top: 150px;
 }
 
-header .mobile-nav a {
-  font-size: 2em;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  margin-left: auto;
-  margin-right: auto;
+.team-top {
   text-align: center;
-  border: 1px solid #ededed;
-  border-radius: 10px;
-  display: none;
+  margin-bottom: 50px;
+}
+
+.team {
+  width: 24%;
+  display: inline-block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  /*background: url('docs/design.png');
+  opacity: 0.5;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1226px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  padding: 19px 0 4px 0;
+  background:black;
+}
+
+header, .banner {
+  color: white;
+}
+
+header h1 { 
+  float: left;
+  margin-left: 38px; 
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header img {
+  width: 98px;
+}
+
+header li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+header li:last-child a{
+  margin-right: 0;
+}
+
+header a {
+  color: #fff;
+  margin-right: 38px;
+  font-size: 14px;
+  transition: color 800ms;
+}
+
+header a.fa-bars {
+  font-size: 23px;
+  margin-right: 0;
+}
+
+header a:hover {
+  color: #74A534;
+}
+
+header a:active, header .active {
+  border-bottom: 5px solid #74A534;
+}
+
+.team, .services {
+  display: inline-block;
+}
+
+.team-wrap, .services-wrap {
+  padding: 150px;
+}
+
+/* Banner */
+
+.banner {
+  background: url('images/cover1.jpg') no-repeat;
+  background-size: cover;
+  height: 780px;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+}
+
+.banner-desc {
+  padding-top: 237px;
+}
+
+.banner-desc h2 {
+  text-align: center;
+}
+
+.banner-desc span:first-child {
+  display: block;
+  font-weight: 300;
+  font-size: 41px;
+  margin-bottom: 10px;
+}
+
+.banner-desc span:last-child {
+  display: block;
+  font-weight: 300;
+  font-size: 41px;
+}
+
+.banner-desc a {
+  color: white;
+  display: block;
+  padding: 15px 1.5em;
+  text-align: center;
+  width:234px;
+  border-radius: 5px;
+  float: left;
+  margin-right: 16px;
+}
+
+.btn-wrap {
+  overflow: hidden;
+  margin: 40px auto;
+  width: 500px;
+}
+
+a.more {
+  border:2px solid #fff;
+}
+
+a.started {
+  background:#74A534;
+  border: 2px solid #74A534;
+}
+
+.banner-btn {
+  color: white;
+  display: block;
+}
+
+/* Team */
+
+.top-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team {
+  width: 24%;
+}
+
+.team img {
+  max-width: 100%;
 }
 
 /* Services */
 
 .services-wrap {
-  margin-top: 40px;
-  background: #f7f7f7;
+  background: #f5f5f5;
 }
 
 .services {
   width: 30%;
-  display: inline-block;
-  vertical-align: top;
-  padding: 25px 1em;
-  margin: 20px 3% 15px 0;
+  margin-right: 2%;
   text-align: center;
-  border:1px solid #ededed;
-  background: white;
-  transition: transform 2s;
+  background:#fff;
+  padding: 70px 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background 1s, color 1s;
 }
 
-.services:nth-child(3), .services:nth-child(6) {
+.services:last-child {
   margin-right: 0;
 }
 
-.services:hover {
-  transform: translateY(-10px);
+.services h3 {
+  font-size: 1.5em;
+  margin: 15px 0 30px 0;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 
-.services span {
+.services h3::after {
+  content: '';
   display: block;
-  margin-bottom: 15px;
-  font-size: 2em;
-  width: 80px;
-  height: 80px;
-  border-radius: 100px;
-  border: 1px solid #ededed;
-  line-height: 80px;
-  margin: 0 auto;
-  transition: transform 1s, background 500ms, color 500ms;
+  height: 3px;
+  width: 50px;
+  background: #74A534;
+  position: absolute;
+  bottom: -10px;
+  left: 40%;
+  transition: background 1s;
 }
 
-.services:hover span {
-  transform: translateY(-10px);
-  background: #03a9f4;
+.services p {
+  font-size: 0.8em;
+}
+
+.services i {
+  font-size: 2em;
+  transition: transform 500ms, color 500ms;
+}
+
+.services:hover {
+  background:#74A534;
   color: white;
+}
+
+.services:hover i {
+  transform: translateY(-20px);
+  color: white;
+}
+
+.services:hover h3::after {
+  background: white;
 }
