@@ -24,12 +24,5 @@ p {
   color: black;
 }
 
-.parrafos ~ p {
-  background: green;
-}
-
-.parrafos p + p {
-  background: blue;
-}
 
 

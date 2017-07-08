@@ -12,6 +12,7 @@ body {
   /*background: url('docs/ejercicio.png') top center;
   opacity: 0.5;*/
   color: #333;
+  background: black;
 }
 
 a {
@@ -75,8 +76,6 @@ header a:active, header a:hover, header .active {
   color: #03a9f4;
 }
 
-/* Degradados */
-
 .degradados-ejemplos div {
   margin: 50px auto 0 auto;
   width: 80%;
@@ -90,61 +89,5 @@ header a:active, header a:hover, header .active {
   color: white;
 }
 
-.degradado-lineal {
-  background: #466368;
-  background: linear-gradient(#648880, #293f50);
-}
-
-.degradado-lineal-direccion {
-  background: #466368;
-  background: linear-gradient(to right bottom, #648880, #293f50);
-}
-
-.degradado-radial {
-  background: #466368;
-  background: radial-gradient(#648880, #293f50);
-}
-
-.degradado-color-stop {
-  background: #466368;
-  background: linear-gradient( #f6f1d3, #648880, #293f50);
-}
-
-.degradado-color-stop-positions {
-  background: #466368;
-  background: linear-gradient( #f6f1d3 0%, #648880 80%, #293f50 100%);
-}
-/* Galeria */
-
-.galeria-fotos {
-  margin-top: 40px;
-}
-
-.fotos-wrap {
-  float: left;
-  width: 33.333%;
-  margin-top: -3px;
-  position:relative;
-  overflow: hidden;
-}
-
-.fotos-wrap img {
-  max-width: 100%;
-}
-
-.fotos-description {
-  background:#03a9f4;
-  background: linear-gradient(to bottom, transparent 0%, rgba(3, 169, 244, 0.9) 75%);
-  /*background:rgba(0,0,0,0.5);*/
-  position: absolute;
-  bottom: -285px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: bottom 500ms;
-}
-
-.fotos-wrap:hover .fotos-description {
-  bottom: 0px;
-} 
+/* Degradados */
 
