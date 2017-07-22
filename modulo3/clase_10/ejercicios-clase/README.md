@@ -7,4 +7,4 @@ Orden de la clase:
 5. Enseñar funciones 
 6. Mandar a los chicos a hacer el ejercicio de Quiz y Bolas de Colores con funciones
 7. Enseñar Objetos
-8. Mandara los chicos a hacer el ejercicio de registro de cursos usando objetos, ciclos y funciones.
+8. Mandar a los chicos a hacer el ejercicio de registro de cursos usando objetos, ciclos y funciones.
