@@ -14,19 +14,32 @@ var qa = [
 
 var respuestasCorrectas = 0;
 
-for (var i = 0; i < qa.length; i++){
-	var pregunta = qa[i][0];
-	var respuesta = qa[i][1];
-	var usuarioRespuesta = prompt(pregunta);
-	if(usuarioRespuesta == respuesta){
-		respuestasCorrectas = respuestasCorrectas + 1;
+function quiz(qa){
+	for (var i = 0; i < qa.length; i++){
+		var pregunta = qa[i][0];
+		var respuesta = qa[i][1];
+		var usuarioRespuesta = prompt(pregunta);
+		if(usuarioRespuesta == respuesta){
+			respuestasCorrectas = respuestasCorrectas + 1;
+		}
 	}
 }
 
-if(respuestasCorrectas === 3) {
-	document.write('<h2>Te ganaste la corona de oro!</h2>');
-}else if(respuestasCorrectas === 2){
-	document.write('<h2>Te ganaste la corona de plata!</h2>');
-}else {
-	document.write('<h2>Perdiste :(</h2>');
+function respuestas(){
+	if(respuestasCorrectas === 3) {
+		var mensaje ='<h2>Te ganaste la corona de oro!</h2>';
+	}else if(respuestasCorrectas === 2){
+		var mensaje ='<h2>Te ganaste la corona de plata!</h2>';
+	}else {
+		var mensaje ='<h2>Perdiste :(</h2>';
+	}
+	return mensaje;
 }
+
+function imprimir(mensaje){
+	document.write(mensaje);
+}
+
+quiz(qa);
+
+imprimir(respuestas());

@@ -24,9 +24,52 @@
 
 // Variable que guarda el mensaje y función que hará que se imprima según la data del objeto.
 
+var estudiantes = [ 
+  { 
+    nombre: 'Dave',
+    curso: 'Front End Development',
+    edad: 15,
+    logros: 14730
+  },
+  {
+    nombre: 'Jody',
+    curso: 'iOS Development with Swift',
+    edad: 30,
+    logros: 375
+  },
+  {
+    nombre: 'Jordan',
+    curso: 'PHP Development',
+    edad: 30,
+    logros: 25
+  },
+  {
+    nombre: 'Jody',
+    curso: 'Learn WordPress',
+    edad: 30,
+    logros: 950
+  },
+  {
+    nombre: 'Trish',
+    curso: 'Rails Development',
+    edad:30,
+    logros: 350
+  }
+];
+
 var message = '';
+var estudiante;
 
 function print(message) {
   var divReporte = document.getElementById('reporte-estudiantes');
   divReporte.innerHTML = message;
 }
+
+for(var i=0; i< estudiantes.length; i++){
+  estudiante = estudiantes[i];
+  message += '<h2 class="titulo"> Estudiante: ' + estudiante.nombre + '</h2>';
+  message += '<p> Curso: ' + estudiante.curso + '</p>';
+  message += '<p> Logros: ' + estudiante.logros + '</p>';
+}
+
+print(message);
